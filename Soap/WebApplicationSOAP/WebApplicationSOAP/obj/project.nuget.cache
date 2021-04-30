@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "BrqwKJqyXHZ8zjceIvGCU0y2eRkzB7GJvGPB3S+OYcG2hlIGAfHcUqPpbDWOoz37saXQIafsLKOdOaL9qAXoxg==",
+  "dgSpecHash": "TT59K7+KR78vo1AAsncAJnaSDQYE0UGpARttoMPNCzGVg1gNS45hq/sqrLHazJ7xIAxVEXujMUiWazvIXBIwGw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\crist\\source\\repos\\WebApplicationSOAP\\WebApplicationSOAP\\WebApplicationSOAP.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\crist\\Documents\\GitHub\\webservice\\Soap\\WebApplicationSOAP\\WebApplicationSOAP\\WebApplicationSOAP.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\crist\\.nuget\\packages\\bootstrap\\4.6.0\\bootstrap.4.6.0.nupkg.sha512",
+    "C:\\Users\\crist\\.nuget\\packages\\jquery\\3.0.0\\jquery.3.0.0.nupkg.sha512",
+    "C:\\Users\\crist\\.nuget\\packages\\popper.js\\1.16.1\\popper.js.1.16.1.nupkg.sha512"
+  ],
   "logs": []
 }

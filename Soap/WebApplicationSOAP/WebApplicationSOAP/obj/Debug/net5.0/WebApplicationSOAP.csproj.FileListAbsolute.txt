@@ -38,3 +38,14 @@ C:\Users\crist\source\repos\WebApplicationSOAP\WebApplicationSOAP\obj\Debug\net5
 C:\Users\crist\source\repos\WebApplicationSOAP\WebApplicationSOAP\obj\Debug\net5.0\WebApplicationSOAP.pdb
 C:\Users\crist\source\repos\WebApplicationSOAP\WebApplicationSOAP\obj\Debug\net5.0\WebApplicationSOAP.genruntimeconfig.cache
 C:\Users\crist\source\repos\WebApplicationSOAP\WebApplicationSOAP\obj\Debug\net5.0\WebApplicationSOAP.csproj.CopyComplete
+C:\Users\crist\Documents\GitHub\webservice\Soap\WebApplicationSOAP\WebApplicationSOAP\obj\Debug\net5.0\WebApplicationSOAP.csprojAssemblyReference.cache
+C:\Users\crist\Documents\GitHub\webservice\Soap\WebApplicationSOAP\WebApplicationSOAP\obj\Debug\net5.0\WebApplicationSOAP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\crist\Documents\GitHub\webservice\Soap\WebApplicationSOAP\WebApplicationSOAP\obj\Debug\net5.0\WebApplicationSOAP.AssemblyInfoInputs.cache
+C:\Users\crist\Documents\GitHub\webservice\Soap\WebApplicationSOAP\WebApplicationSOAP\obj\Debug\net5.0\WebApplicationSOAP.AssemblyInfo.cs
+C:\Users\crist\Documents\GitHub\webservice\Soap\WebApplicationSOAP\WebApplicationSOAP\obj\Debug\net5.0\WebApplicationSOAP.csproj.CoreCompileInputs.cache
+C:\Users\crist\Documents\GitHub\webservice\Soap\WebApplicationSOAP\WebApplicationSOAP\obj\Debug\net5.0\WebApplicationSOAP.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\crist\Documents\GitHub\webservice\Soap\WebApplicationSOAP\WebApplicationSOAP\obj\Debug\net5.0\WebApplicationSOAP.RazorAssemblyInfo.cache
+C:\Users\crist\Documents\GitHub\webservice\Soap\WebApplicationSOAP\WebApplicationSOAP\obj\Debug\net5.0\WebApplicationSOAP.RazorAssemblyInfo.cs
+C:\Users\crist\Documents\GitHub\webservice\Soap\WebApplicationSOAP\WebApplicationSOAP\obj\Debug\net5.0\WebApplicationSOAP.dll
+C:\Users\crist\Documents\GitHub\webservice\Soap\WebApplicationSOAP\WebApplicationSOAP\obj\Debug\net5.0\ref\WebApplicationSOAP.dll
+C:\Users\crist\Documents\GitHub\webservice\Soap\WebApplicationSOAP\WebApplicationSOAP\obj\Debug\net5.0\WebApplicationSOAP.pdb
