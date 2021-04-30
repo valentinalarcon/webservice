@@ -1,0 +1,7 @@
+C:\Users\Soul_\source\repos\ClientSOAP0\ClientSOAP0\obj\Debug\netcoreapp3.1\ClientSOAP0.csprojAssemblyReference.cache
+C:\Users\Soul_\source\repos\ClientSOAP0\ClientSOAP0\obj\Debug\netcoreapp3.1\ClientSOAP0.AssemblyInfoInputs.cache
+C:\Users\Soul_\source\repos\ClientSOAP0\ClientSOAP0\obj\Debug\netcoreapp3.1\ClientSOAP0.AssemblyInfo.cs
+C:\Users\Soul_\source\repos\ClientSOAP0\ClientSOAP0\obj\Debug\netcoreapp3.1\ClientSOAP0.csproj.CoreCompileInputs.cache
+C:\Users\Soul_\source\repos\ClientSOAP0\ClientSOAP0\obj\Debug\netcoreapp3.1\ClientSOAP0.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Soul_\source\repos\ClientSOAP0\ClientSOAP0\obj\Debug\netcoreapp3.1\ClientSOAP0.RazorAssemblyInfo.cache
+C:\Users\Soul_\source\repos\ClientSOAP0\ClientSOAP0\obj\Debug\netcoreapp3.1\ClientSOAP0.RazorAssemblyInfo.cs
