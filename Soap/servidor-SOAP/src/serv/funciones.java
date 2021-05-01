@@ -1,12 +1,10 @@
 package serv;
-
+import java.util.ArrayList;
 
 public class funciones {
 	public static void main(String args[]) {
         System.out.println(dv_rut("19844152"));
         System.out.println(separar_nombres("Valentina Ignacia Tobar Alarcon"));
-        System.out.println(separar_apellidos("Valentina Ignacia Tobar Alarcon"));
-        
     }
 	public static String dv_rut (String Rut) {
 		String resp = "Rut invalido";
@@ -33,7 +31,6 @@ public class funciones {
 			}
 			else{
 				return digito_verificador(Rut);
-				
 			}
 		}
 	}
@@ -63,9 +60,9 @@ public class funciones {
 		}
 		return Rut + "-" + dv;
 	}
-	public static String validar_nombre(String Nombre) {
+	public  static boolean validar_nombre(String Nombre) {
 		if(Nombre.length() == 0) {
-			return "Ingrese un nombre";
+			return false;
 		}
 		else{
 			int cont = 0;
@@ -87,40 +84,35 @@ public class funciones {
 				}
 			}
 			if(cont == Nombre.length()) {
-				return "Nombre valido";
+				return true;
 			}
 			else {
-				return "Nombre invalido";
+				return false;
 			}
 				
 		}
 	}
 	
-	public static String separar_nombres(String Nombre) {
+	public static ArrayList separar_nombres(String Nombre){
+		ArrayList nombre_final = new ArrayList();
+		ArrayList nombres = new ArrayList();
+		ArrayList apellidos = new ArrayList();
 		String[] nombre_separado = Nombre.split(" ");
-		String nombres = "";
-		if(validar_nombre(Nombre)=="Nombre valido") {
-			for(int i=0; i<=nombre_separado.length-3; i++){
-				nombres+=nombre_separado[i] + " ";
+		
+		if(validar_nombre(Nombre)==true) {
+			for(int i=0; i<nombre_separado.length-2; i++){
+				nombres.add(nombre_separado[i]);
 			}
-			return nombres;
+			for(int j=nombre_separado.length-2; j<nombre_separado.length; j++){
+				apellidos.add(nombre_separado[j]);
+			}
+			nombre_final.add(nombres);
+			nombre_final.add(apellidos);
+			return nombre_final;
 		}
 		else {
 
-			return validar_nombre(Nombre);
-		}
-	}
-	public static String separar_apellidos(String Nombre) {
-		String[] nombre_separado = Nombre.split(" ");
-		String apellidos = "";
-		if(validar_nombre(Nombre)=="Nombre valido") {
-			for(int i=2; i<nombre_separado.length; i++){
-				apellidos+=nombre_separado[i] + " ";
-			}
-			return apellidos;
-		}
-		else {
-			return validar_nombre(Nombre);
+			return nombres;
 		}
 	}
 }
