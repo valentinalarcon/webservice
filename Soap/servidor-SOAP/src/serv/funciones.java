@@ -2,10 +2,7 @@ package serv;
 import java.util.ArrayList;
 
 public class funciones {
-	public static void main(String args[]) {
-        System.out.println(dv_rut("19844152"));
-        System.out.println(separar_nombres("Valentina Ignacia Tobar Alarcon"));
-    }
+	
 	public static String dv_rut (String Rut) {
 		String resp = "Rut invalido";
 		if(Rut.length() == 0) {
