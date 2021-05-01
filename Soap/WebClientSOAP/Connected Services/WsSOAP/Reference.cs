@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ServiceReference2
+namespace WsSOAP
 {
     using System.Runtime.Serialization;
     
@@ -20,37 +20,37 @@ namespace ServiceReference2
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://serv", ConfigurationName="ServiceReference2.funciones")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://serv", ConfigurationName="WsSOAP.funciones")]
     public interface funciones
     {
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Rut del espacio de nombres http://serv no está marcado para convertirse en valor nulo
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        ServiceReference2.digito_verificadorResponse digito_verificador(ServiceReference2.digito_verificadorRequest request);
+        WsSOAP.digito_verificadorResponse digito_verificador(WsSOAP.digito_verificadorRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<ServiceReference2.digito_verificadorResponse> digito_verificadorAsync(ServiceReference2.digito_verificadorRequest request);
+        System.Threading.Tasks.Task<WsSOAP.digito_verificadorResponse> digito_verificadorAsync(WsSOAP.digito_verificadorRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Rut del espacio de nombres http://serv no está marcado para convertirse en valor nulo
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        ServiceReference2.dv_rutResponse dv_rut(ServiceReference2.dv_rutRequest request);
+        WsSOAP.dv_rutResponse dv_rut(WsSOAP.dv_rutRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<ServiceReference2.dv_rutResponse> dv_rutAsync(ServiceReference2.dv_rutRequest request);
-        
-        // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Nombre del espacio de nombres http://serv no está marcado para convertirse en valor nulo
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        ServiceReference2.separar_nombresResponse separar_nombres(ServiceReference2.separar_nombresRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<ServiceReference2.separar_nombresResponse> separar_nombresAsync(ServiceReference2.separar_nombresRequest request);
+        System.Threading.Tasks.Task<WsSOAP.dv_rutResponse> dv_rutAsync(WsSOAP.dv_rutRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Nombre del espacio de nombres http://serv no está marcado para convertirse en valor nulo
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        ServiceReference2.validar_nombreResponse validar_nombre(ServiceReference2.validar_nombreRequest request);
+        WsSOAP.separar_nombresResponse separar_nombres(WsSOAP.separar_nombresRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<ServiceReference2.validar_nombreResponse> validar_nombreAsync(ServiceReference2.validar_nombreRequest request);
+        System.Threading.Tasks.Task<WsSOAP.separar_nombresResponse> separar_nombresAsync(WsSOAP.separar_nombresRequest request);
+        
+        // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Nombre del espacio de nombres http://serv no está marcado para convertirse en valor nulo
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        WsSOAP.validar_nombreResponse validar_nombre(WsSOAP.validar_nombreRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<WsSOAP.validar_nombreResponse> validar_nombreAsync(WsSOAP.validar_nombreRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -61,13 +61,13 @@ namespace ServiceReference2
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="digito_verificador", Namespace="http://serv", Order=0)]
-        public ServiceReference2.digito_verificadorRequestBody Body;
+        public WsSOAP.digito_verificadorRequestBody Body;
         
         public digito_verificadorRequest()
         {
         }
         
-        public digito_verificadorRequest(ServiceReference2.digito_verificadorRequestBody Body)
+        public digito_verificadorRequest(WsSOAP.digito_verificadorRequestBody Body)
         {
             this.Body = Body;
         }
@@ -101,13 +101,13 @@ namespace ServiceReference2
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="digito_verificadorResponse", Namespace="http://serv", Order=0)]
-        public ServiceReference2.digito_verificadorResponseBody Body;
+        public WsSOAP.digito_verificadorResponseBody Body;
         
         public digito_verificadorResponse()
         {
         }
         
-        public digito_verificadorResponse(ServiceReference2.digito_verificadorResponseBody Body)
+        public digito_verificadorResponse(WsSOAP.digito_verificadorResponseBody Body)
         {
             this.Body = Body;
         }
@@ -141,13 +141,13 @@ namespace ServiceReference2
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="dv_rut", Namespace="http://serv", Order=0)]
-        public ServiceReference2.dv_rutRequestBody Body;
+        public WsSOAP.dv_rutRequestBody Body;
         
         public dv_rutRequest()
         {
         }
         
-        public dv_rutRequest(ServiceReference2.dv_rutRequestBody Body)
+        public dv_rutRequest(WsSOAP.dv_rutRequestBody Body)
         {
             this.Body = Body;
         }
@@ -181,13 +181,13 @@ namespace ServiceReference2
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="dv_rutResponse", Namespace="http://serv", Order=0)]
-        public ServiceReference2.dv_rutResponseBody Body;
+        public WsSOAP.dv_rutResponseBody Body;
         
         public dv_rutResponse()
         {
         }
         
-        public dv_rutResponse(ServiceReference2.dv_rutResponseBody Body)
+        public dv_rutResponse(WsSOAP.dv_rutResponseBody Body)
         {
             this.Body = Body;
         }
@@ -221,13 +221,13 @@ namespace ServiceReference2
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="separar_nombres", Namespace="http://serv", Order=0)]
-        public ServiceReference2.separar_nombresRequestBody Body;
+        public WsSOAP.separar_nombresRequestBody Body;
         
         public separar_nombresRequest()
         {
         }
         
-        public separar_nombresRequest(ServiceReference2.separar_nombresRequestBody Body)
+        public separar_nombresRequest(WsSOAP.separar_nombresRequestBody Body)
         {
             this.Body = Body;
         }
@@ -261,13 +261,13 @@ namespace ServiceReference2
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="separar_nombresResponse", Namespace="http://serv", Order=0)]
-        public ServiceReference2.separar_nombresResponseBody Body;
+        public WsSOAP.separar_nombresResponseBody Body;
         
         public separar_nombresResponse()
         {
         }
         
-        public separar_nombresResponse(ServiceReference2.separar_nombresResponseBody Body)
+        public separar_nombresResponse(WsSOAP.separar_nombresResponseBody Body)
         {
             this.Body = Body;
         }
@@ -281,13 +281,13 @@ namespace ServiceReference2
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public ServiceReference2.ArrayOf_xsd_anyType separar_nombresReturn;
+        public WsSOAP.ArrayOf_xsd_anyType separar_nombresReturn;
         
         public separar_nombresResponseBody()
         {
         }
         
-        public separar_nombresResponseBody(ServiceReference2.ArrayOf_xsd_anyType separar_nombresReturn)
+        public separar_nombresResponseBody(WsSOAP.ArrayOf_xsd_anyType separar_nombresReturn)
         {
             this.separar_nombresReturn = separar_nombresReturn;
         }
@@ -301,13 +301,13 @@ namespace ServiceReference2
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="validar_nombre", Namespace="http://serv", Order=0)]
-        public ServiceReference2.validar_nombreRequestBody Body;
+        public WsSOAP.validar_nombreRequestBody Body;
         
         public validar_nombreRequest()
         {
         }
         
-        public validar_nombreRequest(ServiceReference2.validar_nombreRequestBody Body)
+        public validar_nombreRequest(WsSOAP.validar_nombreRequestBody Body)
         {
             this.Body = Body;
         }
@@ -341,13 +341,13 @@ namespace ServiceReference2
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="validar_nombreResponse", Namespace="http://serv", Order=0)]
-        public ServiceReference2.validar_nombreResponseBody Body;
+        public WsSOAP.validar_nombreResponseBody Body;
         
         public validar_nombreResponse()
         {
         }
         
-        public validar_nombreResponse(ServiceReference2.validar_nombreResponseBody Body)
+        public validar_nombreResponse(WsSOAP.validar_nombreResponseBody Body)
         {
             this.Body = Body;
         }
@@ -374,13 +374,13 @@ namespace ServiceReference2
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    public interface funcionesChannel : ServiceReference2.funciones, System.ServiceModel.IClientChannel
+    public interface funcionesChannel : WsSOAP.funciones, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    public partial class funcionesClient : System.ServiceModel.ClientBase<ServiceReference2.funciones>, ServiceReference2.funciones
+    public partial class funcionesClient : System.ServiceModel.ClientBase<WsSOAP.funciones>, WsSOAP.funciones
     {
         
         /// <summary>
@@ -424,119 +424,119 @@ namespace ServiceReference2
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        ServiceReference2.digito_verificadorResponse ServiceReference2.funciones.digito_verificador(ServiceReference2.digito_verificadorRequest request)
+        WsSOAP.digito_verificadorResponse WsSOAP.funciones.digito_verificador(WsSOAP.digito_verificadorRequest request)
         {
             return base.Channel.digito_verificador(request);
         }
         
         public string digito_verificador(string Rut)
         {
-            ServiceReference2.digito_verificadorRequest inValue = new ServiceReference2.digito_verificadorRequest();
-            inValue.Body = new ServiceReference2.digito_verificadorRequestBody();
+            WsSOAP.digito_verificadorRequest inValue = new WsSOAP.digito_verificadorRequest();
+            inValue.Body = new WsSOAP.digito_verificadorRequestBody();
             inValue.Body.Rut = Rut;
-            ServiceReference2.digito_verificadorResponse retVal = ((ServiceReference2.funciones)(this)).digito_verificador(inValue);
+            WsSOAP.digito_verificadorResponse retVal = ((WsSOAP.funciones)(this)).digito_verificador(inValue);
             return retVal.Body.digito_verificadorReturn;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference2.digito_verificadorResponse> ServiceReference2.funciones.digito_verificadorAsync(ServiceReference2.digito_verificadorRequest request)
+        System.Threading.Tasks.Task<WsSOAP.digito_verificadorResponse> WsSOAP.funciones.digito_verificadorAsync(WsSOAP.digito_verificadorRequest request)
         {
             return base.Channel.digito_verificadorAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ServiceReference2.digito_verificadorResponse> digito_verificadorAsync(string Rut)
+        public System.Threading.Tasks.Task<WsSOAP.digito_verificadorResponse> digito_verificadorAsync(string Rut)
         {
-            ServiceReference2.digito_verificadorRequest inValue = new ServiceReference2.digito_verificadorRequest();
-            inValue.Body = new ServiceReference2.digito_verificadorRequestBody();
+            WsSOAP.digito_verificadorRequest inValue = new WsSOAP.digito_verificadorRequest();
+            inValue.Body = new WsSOAP.digito_verificadorRequestBody();
             inValue.Body.Rut = Rut;
-            return ((ServiceReference2.funciones)(this)).digito_verificadorAsync(inValue);
+            return ((WsSOAP.funciones)(this)).digito_verificadorAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        ServiceReference2.dv_rutResponse ServiceReference2.funciones.dv_rut(ServiceReference2.dv_rutRequest request)
+        WsSOAP.dv_rutResponse WsSOAP.funciones.dv_rut(WsSOAP.dv_rutRequest request)
         {
             return base.Channel.dv_rut(request);
         }
         
         public string dv_rut(string Rut)
         {
-            ServiceReference2.dv_rutRequest inValue = new ServiceReference2.dv_rutRequest();
-            inValue.Body = new ServiceReference2.dv_rutRequestBody();
+            WsSOAP.dv_rutRequest inValue = new WsSOAP.dv_rutRequest();
+            inValue.Body = new WsSOAP.dv_rutRequestBody();
             inValue.Body.Rut = Rut;
-            ServiceReference2.dv_rutResponse retVal = ((ServiceReference2.funciones)(this)).dv_rut(inValue);
+            WsSOAP.dv_rutResponse retVal = ((WsSOAP.funciones)(this)).dv_rut(inValue);
             return retVal.Body.dv_rutReturn;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference2.dv_rutResponse> ServiceReference2.funciones.dv_rutAsync(ServiceReference2.dv_rutRequest request)
+        System.Threading.Tasks.Task<WsSOAP.dv_rutResponse> WsSOAP.funciones.dv_rutAsync(WsSOAP.dv_rutRequest request)
         {
             return base.Channel.dv_rutAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ServiceReference2.dv_rutResponse> dv_rutAsync(string Rut)
+        public System.Threading.Tasks.Task<WsSOAP.dv_rutResponse> dv_rutAsync(string Rut)
         {
-            ServiceReference2.dv_rutRequest inValue = new ServiceReference2.dv_rutRequest();
-            inValue.Body = new ServiceReference2.dv_rutRequestBody();
+            WsSOAP.dv_rutRequest inValue = new WsSOAP.dv_rutRequest();
+            inValue.Body = new WsSOAP.dv_rutRequestBody();
             inValue.Body.Rut = Rut;
-            return ((ServiceReference2.funciones)(this)).dv_rutAsync(inValue);
+            return ((WsSOAP.funciones)(this)).dv_rutAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        ServiceReference2.separar_nombresResponse ServiceReference2.funciones.separar_nombres(ServiceReference2.separar_nombresRequest request)
+        WsSOAP.separar_nombresResponse WsSOAP.funciones.separar_nombres(WsSOAP.separar_nombresRequest request)
         {
             return base.Channel.separar_nombres(request);
         }
         
-        public ServiceReference2.ArrayOf_xsd_anyType separar_nombres(string Nombre)
+        public WsSOAP.ArrayOf_xsd_anyType separar_nombres(string Nombre)
         {
-            ServiceReference2.separar_nombresRequest inValue = new ServiceReference2.separar_nombresRequest();
-            inValue.Body = new ServiceReference2.separar_nombresRequestBody();
+            WsSOAP.separar_nombresRequest inValue = new WsSOAP.separar_nombresRequest();
+            inValue.Body = new WsSOAP.separar_nombresRequestBody();
             inValue.Body.Nombre = Nombre;
-            ServiceReference2.separar_nombresResponse retVal = ((ServiceReference2.funciones)(this)).separar_nombres(inValue);
+            WsSOAP.separar_nombresResponse retVal = ((WsSOAP.funciones)(this)).separar_nombres(inValue);
             return retVal.Body.separar_nombresReturn;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference2.separar_nombresResponse> ServiceReference2.funciones.separar_nombresAsync(ServiceReference2.separar_nombresRequest request)
+        System.Threading.Tasks.Task<WsSOAP.separar_nombresResponse> WsSOAP.funciones.separar_nombresAsync(WsSOAP.separar_nombresRequest request)
         {
             return base.Channel.separar_nombresAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ServiceReference2.separar_nombresResponse> separar_nombresAsync(string Nombre)
+        public System.Threading.Tasks.Task<WsSOAP.separar_nombresResponse> separar_nombresAsync(string Nombre)
         {
-            ServiceReference2.separar_nombresRequest inValue = new ServiceReference2.separar_nombresRequest();
-            inValue.Body = new ServiceReference2.separar_nombresRequestBody();
+            WsSOAP.separar_nombresRequest inValue = new WsSOAP.separar_nombresRequest();
+            inValue.Body = new WsSOAP.separar_nombresRequestBody();
             inValue.Body.Nombre = Nombre;
-            return ((ServiceReference2.funciones)(this)).separar_nombresAsync(inValue);
+            return ((WsSOAP.funciones)(this)).separar_nombresAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        ServiceReference2.validar_nombreResponse ServiceReference2.funciones.validar_nombre(ServiceReference2.validar_nombreRequest request)
+        WsSOAP.validar_nombreResponse WsSOAP.funciones.validar_nombre(WsSOAP.validar_nombreRequest request)
         {
             return base.Channel.validar_nombre(request);
         }
         
         public bool validar_nombre(string Nombre)
         {
-            ServiceReference2.validar_nombreRequest inValue = new ServiceReference2.validar_nombreRequest();
-            inValue.Body = new ServiceReference2.validar_nombreRequestBody();
+            WsSOAP.validar_nombreRequest inValue = new WsSOAP.validar_nombreRequest();
+            inValue.Body = new WsSOAP.validar_nombreRequestBody();
             inValue.Body.Nombre = Nombre;
-            ServiceReference2.validar_nombreResponse retVal = ((ServiceReference2.funciones)(this)).validar_nombre(inValue);
+            WsSOAP.validar_nombreResponse retVal = ((WsSOAP.funciones)(this)).validar_nombre(inValue);
             return retVal.Body.validar_nombreReturn;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference2.validar_nombreResponse> ServiceReference2.funciones.validar_nombreAsync(ServiceReference2.validar_nombreRequest request)
+        System.Threading.Tasks.Task<WsSOAP.validar_nombreResponse> WsSOAP.funciones.validar_nombreAsync(WsSOAP.validar_nombreRequest request)
         {
             return base.Channel.validar_nombreAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ServiceReference2.validar_nombreResponse> validar_nombreAsync(string Nombre)
+        public System.Threading.Tasks.Task<WsSOAP.validar_nombreResponse> validar_nombreAsync(string Nombre)
         {
-            ServiceReference2.validar_nombreRequest inValue = new ServiceReference2.validar_nombreRequest();
-            inValue.Body = new ServiceReference2.validar_nombreRequestBody();
+            WsSOAP.validar_nombreRequest inValue = new WsSOAP.validar_nombreRequest();
+            inValue.Body = new WsSOAP.validar_nombreRequestBody();
             inValue.Body.Nombre = Nombre;
-            return ((ServiceReference2.funciones)(this)).validar_nombreAsync(inValue);
+            return ((WsSOAP.funciones)(this)).validar_nombreAsync(inValue);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

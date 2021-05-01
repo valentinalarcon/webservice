@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using WebClientSOAP.Models;
+using WebClientSOAP.Servicios;
 
 namespace WebClientSOAP.Controllers
 {
@@ -27,10 +28,17 @@ namespace WebClientSOAP.Controllers
         {
             return View();
         }
-
+        
         public IActionResult Rut()
         {
             return View();
+        }
+        [HttpPost]
+        public IActionResult RespuestaRut(string Rut)
+        {
+            var ServiciosSOAP = new ServiciosSOAP();
+            var model = ServiciosSOAP.RunRut(Rut);
+            return View(model);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
