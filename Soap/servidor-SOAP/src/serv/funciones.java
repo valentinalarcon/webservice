@@ -1,8 +1,7 @@
 package serv;
 import java.util.ArrayList;
-
-public class funciones {
 	
+public class funciones {
 	public static String dv_rut (String Rut) {
 		String resp = "Rut invalido";
 		if(Rut.length() == 0) {
@@ -110,7 +109,6 @@ public class funciones {
 			return nombre_final;
 		}
 		else {
-
 			return resp;
 		}
 	}
