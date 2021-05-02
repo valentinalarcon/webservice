@@ -94,6 +94,8 @@ public class funciones {
 		ArrayList nombre_final = new ArrayList();
 		ArrayList nombres = new ArrayList();
 		ArrayList apellidos = new ArrayList();
+		ArrayList resp = new ArrayList();
+		resp.add("Nombre invalido");
 		String[] nombre_separado = Nombre.split(" ");
 		
 		if(validar_nombre(Nombre)==true) {
@@ -109,7 +111,7 @@ public class funciones {
 		}
 		else {
 
-			return nombres;
+			return resp;
 		}
 	}
 }
