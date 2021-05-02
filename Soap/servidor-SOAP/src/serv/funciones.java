@@ -87,23 +87,20 @@ public class funciones {
 				
 		}
 	}
-	public static String separar_nombre(String Nombre, int x) {
+	public static String separar_nombre(String Nombre) {
 		String[] nombre_separado = Nombre.split(" ");
-		String separado = "";
+		String nombre_final = "";
+		String nombres = "Nombres:" + "\n";
+		String apellidos = "Apellidos:" + "\n";
 		if(validar_nombre(Nombre)==true) {
-			if(x == 0) {
 				for(int i=0; i<nombre_separado.length-2; i++){
-	
-					separado+=nombre_separado[i] + " ";
+					nombres+=nombre_separado[i] + "\n";
 				}
-				return separado;
-			}
-			else { 
 				for(int i=nombre_separado.length-2; i<nombre_separado.length; i++){
-					separado+=nombre_separado[i] + " ";
+					apellidos+=nombre_separado[i] + "\n";
 				}
-				return separado;
-			}
+			return nombres + "\n" + apellidos;
+			
 		}
 		else {
 			return "Nombre invalido";
