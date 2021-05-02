@@ -49,7 +49,6 @@ C:\Users\crist\source\repos\WebClientSOAP\obj\Debug\netcoreapp3.1\WebClientSOAP.
 C:\Users\crist\source\repos\WebClientSOAP\obj\Debug\netcoreapp3.1\Razor\Views\Home\Rut.cshtml.g.cs
 C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\bin\Debug\netcoreapp3.1\Connected Services\ServiceReference1\ConnectedService.json
 C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\bin\Debug\netcoreapp3.1\Connected Services\WsSOAP\ConnectedService.json
 C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\bin\Debug\netcoreapp3.1\WebClientSOAP.exe
 C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\bin\Debug\netcoreapp3.1\WebClientSOAP.deps.json
@@ -83,7 +82,6 @@ C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\obj\Debug\netcorea
 C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\obj\Debug\netcoreapp3.1\WebClientSOAP.TagHelpers.output.cache
 C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\obj\Debug\netcoreapp3.1\WebClientSOAP.RazorCoreGenerate.cache
 C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\obj\Debug\netcoreapp3.1\Razor\Views\Home\RespuestaRut.cshtml.g.cs
 C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\obj\Debug\netcoreapp3.1\Razor\Views\Home\Rut.cshtml.g.cs
 C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
@@ -98,3 +96,5 @@ C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\obj\Debug\netcorea
 C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\obj\Debug\netcoreapp3.1\WebClientSOAP.dll
 C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\obj\Debug\netcoreapp3.1\WebClientSOAP.pdb
 C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\obj\Debug\netcoreapp3.1\WebClientSOAP.genruntimeconfig.cache
+C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\obj\Debug\netcoreapp3.1\Razor\Views\Home\Nombres.cshtml.g.cs
+C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\obj\Debug\netcoreapp3.1\Razor\Views\Home\RespuestaNombres.cshtml.g.cs

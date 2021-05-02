@@ -1,0 +1,42 @@
+﻿
+@{ ViewBag.title = "Nombres";
+}
+
+<div class="container mt-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-11 col-ms-11 col-lg-4 bg-white rounded border shadow-sm mx-1 mb-3 mb-lg-0">
+            <h3 class="text-uppercase font-weight-bold my-4">Estructurar el nombre completo</h3>
+            <hr>
+            <p class="text-justify my-2 py-3">
+                En esta sección podrás obtener un <a class="badge badge-primary">saludo</a> personalizado a partir de tus apellidos, tus nombres y tu sexo.<br><br>Solo ingresa tus datos en los campos disponibles y presiona <a class="badge badge-success">enviar</a>.
+            </p>
+        </div>
+        <div class="col-11 col-ms-11 col-lg-7 bg-white rounded border shadow-sm mx-1">
+            <div class="row d-flex justify-content-center pt-4">
+                <div class="col-10">
+                    <form action="/Home/RespuestaNombres" method="POST">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="Nombre">Ingrese su nombre completo separado por espacios :</label>
+                                    <input type="text" class="form-control form-control-sm" placeholder="Cristobal Andres Gonzalez Garate" name="Nombre">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="X">nombres o apellidos(para separar nombres ingrese 0 y para separar nombres ingrese 1)</label>
+                            <input type="number" class="form-control form-control-sm" placeholder="0 o 1" name="x">
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-success">Enviar</button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>

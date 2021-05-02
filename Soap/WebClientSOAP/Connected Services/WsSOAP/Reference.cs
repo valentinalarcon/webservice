@@ -9,18 +9,10 @@
 
 namespace WsSOAP
 {
-    using System.Runtime.Serialization;
     
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.Runtime.Serialization.CollectionDataContractAttribute(Name="ArrayOf_xsd_anyType", Namespace="http://serv", ItemName="item")]
-    public class ArrayOf_xsd_anyType : System.Collections.Generic.List<object>
-    {
-    }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://serv", ConfigurationName="WsSOAP.funciones")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://serv", ConfigurationName="ServiceReference2.funciones")]
     public interface funciones
     {
         
@@ -40,17 +32,17 @@ namespace WsSOAP
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Nombre del espacio de nombres http://serv no está marcado para convertirse en valor nulo
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        WsSOAP.separar_nombresResponse separar_nombres(WsSOAP.separar_nombresRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WsSOAP.separar_nombresResponse> separar_nombresAsync(WsSOAP.separar_nombresRequest request);
-        
-        // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Nombre del espacio de nombres http://serv no está marcado para convertirse en valor nulo
-        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         WsSOAP.validar_nombreResponse validar_nombre(WsSOAP.validar_nombreRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
         System.Threading.Tasks.Task<WsSOAP.validar_nombreResponse> validar_nombreAsync(WsSOAP.validar_nombreRequest request);
+        
+        // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Nombre del espacio de nombres http://serv no está marcado para convertirse en valor nulo
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        WsSOAP.separar_nombreResponse separar_nombre(WsSOAP.separar_nombreRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
+        System.Threading.Tasks.Task<WsSOAP.separar_nombreResponse> separar_nombreAsync(WsSOAP.separar_nombreRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -217,86 +209,6 @@ namespace WsSOAP
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class separar_nombresRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="separar_nombres", Namespace="http://serv", Order=0)]
-        public WsSOAP.separar_nombresRequestBody Body;
-        
-        public separar_nombresRequest()
-        {
-        }
-        
-        public separar_nombresRequest(WsSOAP.separar_nombresRequestBody Body)
-        {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://serv")]
-    public partial class separar_nombresRequestBody
-    {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string Nombre;
-        
-        public separar_nombresRequestBody()
-        {
-        }
-        
-        public separar_nombresRequestBody(string Nombre)
-        {
-            this.Nombre = Nombre;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class separar_nombresResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="separar_nombresResponse", Namespace="http://serv", Order=0)]
-        public WsSOAP.separar_nombresResponseBody Body;
-        
-        public separar_nombresResponse()
-        {
-        }
-        
-        public separar_nombresResponse(WsSOAP.separar_nombresResponseBody Body)
-        {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://serv")]
-    public partial class separar_nombresResponseBody
-    {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public WsSOAP.ArrayOf_xsd_anyType separar_nombresReturn;
-        
-        public separar_nombresResponseBody()
-        {
-        }
-        
-        public separar_nombresResponseBody(WsSOAP.ArrayOf_xsd_anyType separar_nombresReturn)
-        {
-            this.separar_nombresReturn = separar_nombresReturn;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class validar_nombreRequest
     {
         
@@ -370,6 +282,90 @@ namespace WsSOAP
         public validar_nombreResponseBody(bool validar_nombreReturn)
         {
             this.validar_nombreReturn = validar_nombreReturn;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class separar_nombreRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="separar_nombre", Namespace="http://serv", Order=0)]
+        public WsSOAP.separar_nombreRequestBody Body;
+        
+        public separar_nombreRequest()
+        {
+        }
+        
+        public separar_nombreRequest(WsSOAP.separar_nombreRequestBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://serv")]
+    public partial class separar_nombreRequestBody
+    {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string Nombre;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public int x;
+        
+        public separar_nombreRequestBody()
+        {
+        }
+        
+        public separar_nombreRequestBody(string Nombre, int x)
+        {
+            this.Nombre = Nombre;
+            this.x = x;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class separar_nombreResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="separar_nombreResponse", Namespace="http://serv", Order=0)]
+        public WsSOAP.separar_nombreResponseBody Body;
+        
+        public separar_nombreResponse()
+        {
+        }
+        
+        public separar_nombreResponse(WsSOAP.separar_nombreResponseBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://serv")]
+    public partial class separar_nombreResponseBody
+    {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string separar_nombreReturn;
+        
+        public separar_nombreResponseBody()
+        {
+        }
+        
+        public separar_nombreResponseBody(string separar_nombreReturn)
+        {
+            this.separar_nombreReturn = separar_nombreReturn;
         }
     }
     
@@ -482,35 +478,6 @@ namespace WsSOAP
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WsSOAP.separar_nombresResponse WsSOAP.funciones.separar_nombres(WsSOAP.separar_nombresRequest request)
-        {
-            return base.Channel.separar_nombres(request);
-        }
-        
-        public WsSOAP.ArrayOf_xsd_anyType separar_nombres(string Nombre)
-        {
-            WsSOAP.separar_nombresRequest inValue = new WsSOAP.separar_nombresRequest();
-            inValue.Body = new WsSOAP.separar_nombresRequestBody();
-            inValue.Body.Nombre = Nombre;
-            WsSOAP.separar_nombresResponse retVal = ((WsSOAP.funciones)(this)).separar_nombres(inValue);
-            return retVal.Body.separar_nombresReturn;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WsSOAP.separar_nombresResponse> WsSOAP.funciones.separar_nombresAsync(WsSOAP.separar_nombresRequest request)
-        {
-            return base.Channel.separar_nombresAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<WsSOAP.separar_nombresResponse> separar_nombresAsync(string Nombre)
-        {
-            WsSOAP.separar_nombresRequest inValue = new WsSOAP.separar_nombresRequest();
-            inValue.Body = new WsSOAP.separar_nombresRequestBody();
-            inValue.Body.Nombre = Nombre;
-            return ((WsSOAP.funciones)(this)).separar_nombresAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         WsSOAP.validar_nombreResponse WsSOAP.funciones.validar_nombre(WsSOAP.validar_nombreRequest request)
         {
             return base.Channel.validar_nombre(request);
@@ -537,6 +504,37 @@ namespace WsSOAP
             inValue.Body = new WsSOAP.validar_nombreRequestBody();
             inValue.Body.Nombre = Nombre;
             return ((WsSOAP.funciones)(this)).validar_nombreAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WsSOAP.separar_nombreResponse WsSOAP.funciones.separar_nombre(WsSOAP.separar_nombreRequest request)
+        {
+            return base.Channel.separar_nombre(request);
+        }
+        
+        public string separar_nombre(string Nombre, int x)
+        {
+            WsSOAP.separar_nombreRequest inValue = new WsSOAP.separar_nombreRequest();
+            inValue.Body = new WsSOAP.separar_nombreRequestBody();
+            inValue.Body.Nombre = Nombre;
+            inValue.Body.x = x;
+            WsSOAP.separar_nombreResponse retVal = ((WsSOAP.funciones)(this)).separar_nombre(inValue);
+            return retVal.Body.separar_nombreReturn;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WsSOAP.separar_nombreResponse> WsSOAP.funciones.separar_nombreAsync(WsSOAP.separar_nombreRequest request)
+        {
+            return base.Channel.separar_nombreAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WsSOAP.separar_nombreResponse> separar_nombreAsync(string Nombre, int x)
+        {
+            WsSOAP.separar_nombreRequest inValue = new WsSOAP.separar_nombreRequest();
+            inValue.Body = new WsSOAP.separar_nombreRequestBody();
+            inValue.Body.Nombre = Nombre;
+            inValue.Body.x = x;
+            return ((WsSOAP.funciones)(this)).separar_nombreAsync(inValue);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

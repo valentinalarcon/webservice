@@ -24,7 +24,7 @@ namespace WebClientSOAP.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Nombres()
         {
             return View();
         }
@@ -33,11 +33,20 @@ namespace WebClientSOAP.Controllers
         {
             return View();
         }
+
         [HttpPost]
         public IActionResult RespuestaRut(string Rut)
         {
             var ServiciosSOAP = new ServiciosSOAP();
             var model = ServiciosSOAP.RunRut(Rut);
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult RespuestaNombres(string Nombre, int x)
+        {
+            var ServicioSOAP = new ServiciosSOAP();
+            var model = ServicioSOAP.RunSeparacion(Nombre, x);
             return View(model);
         }
 

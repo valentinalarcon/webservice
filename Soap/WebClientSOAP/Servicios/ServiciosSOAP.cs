@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
+using System.Linq;
 using WebClientSOAP.Models;
+
 
 namespace WebClientSOAP.Servicios
 {
@@ -21,6 +22,21 @@ namespace WebClientSOAP.Servicios
                 Rut = run.digito_verificador(Rut)
                 
             };
+        }
+
+        public NombresModel RunSeparacion(string Nombre, int x)
+        {
+
+            WsSOAP.funcionesClient run = new WsSOAP.funcionesClient();
+            if(Nombre == null)
+            {
+                Nombre = "";
+            }
+            return new NombresModel()
+            {
+                Nombre = run.separar_nombre(Nombre, x)
+            };
+
         }
     }
 }
