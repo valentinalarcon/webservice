@@ -1,9 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Soap\\servidor-SOAP\\src",
-    "\\Soap\\servidor-SOAP\\src\\serv"
+    "\\Soap",
+    "\\Soap\\WebApplicationSOAP\\WebApplicationSOAP",
+    "\\Soap\\WebApplicationSOAP\\WebApplicationSOAP\\obj",
+    "\\Soap\\WebApplicationSOAP\\WebApplicationSOAP\\obj\\Release",
+    "\\Soap\\WebApplicationSOAP\\WebApplicationSOAP\\obj\\Release\\net5.0",
+    "\\Soap\\WebApplicationSOAP\\WebApplicationSOAP\\obj\\Release\\net5.0\\ref",
+    "\\Soap\\WebClientSOAP",
+    "\\Soap\\WebClientSOAP\\Models",
+    "\\Soap\\WebClientSOAP\\Servicios"
   ],
-  "SelectedNode": "\\Soap",
+  "SelectedNode": "\\Soap\\WebClientSOAP",
   "PreviewInSolutionExplorer": false
 }
