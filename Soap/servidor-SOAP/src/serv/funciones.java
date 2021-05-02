@@ -1,5 +1,4 @@
 package serv;
-import java.util.ArrayList;
 	
 public class funciones {
 	public static String dv_rut (String Rut) {
@@ -88,28 +87,26 @@ public class funciones {
 				
 		}
 	}
-	
-	public static ArrayList separar_nombres(String Nombre){
-		ArrayList nombre_final = new ArrayList();
-		ArrayList nombres = new ArrayList();
-		ArrayList apellidos = new ArrayList();
-		ArrayList resp = new ArrayList();
-		resp.add("Nombre invalido");
+	public static String separar_nombre(String Nombre, int x) {
 		String[] nombre_separado = Nombre.split(" ");
-		
+		String separado = "";
 		if(validar_nombre(Nombre)==true) {
-			for(int i=0; i<nombre_separado.length-2; i++){
-				nombres.add(nombre_separado[i]);
+			if(x == 0) {
+				for(int i=0; i<nombre_separado.length-2; i++){
+	
+					separado+=nombre_separado[i] + " ";
+				}
+				return separado;
 			}
-			for(int j=nombre_separado.length-2; j<nombre_separado.length; j++){
-				apellidos.add(nombre_separado[j]);
+			else { 
+				for(int i=nombre_separado.length-2; i<nombre_separado.length; i++){
+					separado+=nombre_separado[i] + " ";
+				}
+				return separado;
 			}
-			nombre_final.add(nombres);
-			nombre_final.add(apellidos);
-			return nombre_final;
 		}
 		else {
-			return resp;
+			return "Nombre invalido";
 		}
 	}
 }
