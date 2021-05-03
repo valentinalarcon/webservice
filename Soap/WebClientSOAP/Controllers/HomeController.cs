@@ -43,10 +43,10 @@ namespace WebClientSOAP.Controllers
         }
 
         [HttpPost]
-        public IActionResult RespuestaNombres(string Nombre, int x)
+        public IActionResult RespuestaNombres(string Nombre)
         {
             var ServicioSOAP = new ServiciosSOAP();
-            var model = ServicioSOAP.RunSeparacion(Nombre, x);
+            var model = ServicioSOAP.RunSeparacion(Nombre);
             return View(model);
         }
 

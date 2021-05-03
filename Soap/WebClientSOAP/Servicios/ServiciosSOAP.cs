@@ -24,7 +24,7 @@ namespace WebClientSOAP.Servicios
             };
         }
 
-        public NombresModel RunSeparacion(string Nombre, int x)
+        public NombresModel RunSeparacion(string Nombre)
         {
 
             WsSOAP.funcionesClient run = new WsSOAP.funcionesClient();
@@ -34,7 +34,8 @@ namespace WebClientSOAP.Servicios
             }
             return new NombresModel()
             {
-                Nombre = run.separar_nombre(Nombre, x)
+                Nombre = run.separar_nombre(Nombre)
+
             };
 
         }

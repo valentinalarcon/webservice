@@ -89,7 +89,6 @@ public class funciones {
 	}
 	public static String separar_nombre(String Nombre) {
 		String[] nombre_separado = Nombre.split(" ");
-		String nombre_final = "";
 		String nombres = "Nombres:" + "\n";
 		String apellidos = "Apellidos:" + "\n";
 		if(validar_nombre(Nombre)==true) {

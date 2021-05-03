@@ -12,7 +12,7 @@ namespace WsSOAP
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://serv", ConfigurationName="ServiceReference2.funciones")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://serv", ConfigurationName="ServiceReference1.funciones")]
     public interface funciones
     {
         
@@ -315,17 +315,13 @@ namespace WsSOAP
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
         public string Nombre;
         
-        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
-        public int x;
-        
         public separar_nombreRequestBody()
         {
         }
         
-        public separar_nombreRequestBody(string Nombre, int x)
+        public separar_nombreRequestBody(string Nombre)
         {
             this.Nombre = Nombre;
-            this.x = x;
         }
     }
     
@@ -512,12 +508,11 @@ namespace WsSOAP
             return base.Channel.separar_nombre(request);
         }
         
-        public string separar_nombre(string Nombre, int x)
+        public string separar_nombre(string Nombre)
         {
             WsSOAP.separar_nombreRequest inValue = new WsSOAP.separar_nombreRequest();
             inValue.Body = new WsSOAP.separar_nombreRequestBody();
             inValue.Body.Nombre = Nombre;
-            inValue.Body.x = x;
             WsSOAP.separar_nombreResponse retVal = ((WsSOAP.funciones)(this)).separar_nombre(inValue);
             return retVal.Body.separar_nombreReturn;
         }
@@ -528,12 +523,11 @@ namespace WsSOAP
             return base.Channel.separar_nombreAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WsSOAP.separar_nombreResponse> separar_nombreAsync(string Nombre, int x)
+        public System.Threading.Tasks.Task<WsSOAP.separar_nombreResponse> separar_nombreAsync(string Nombre)
         {
             WsSOAP.separar_nombreRequest inValue = new WsSOAP.separar_nombreRequest();
             inValue.Body = new WsSOAP.separar_nombreRequestBody();
             inValue.Body.Nombre = Nombre;
-            inValue.Body.x = x;
             return ((WsSOAP.funciones)(this)).separar_nombreAsync(inValue);
         }
         

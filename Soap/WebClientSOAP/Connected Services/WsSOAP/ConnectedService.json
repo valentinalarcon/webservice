@@ -13,7 +13,7 @@
       "System.Collections.Generic.Dictionary`2"
     ],
     "namespaceMappings": [
-      "*, ServiceReference2"
+      "*, ServiceReference1"
     ],
     "references": [
       "System.ServiceModel, {System.ServiceModel.Primitives, 4.4.4}",

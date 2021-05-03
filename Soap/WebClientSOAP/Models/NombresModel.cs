@@ -8,6 +8,6 @@ namespace WebClientSOAP.Models
     public class NombresModel
     {
         public string Nombre { get; set; }
-        public int X  { get; set; }
+   
     }
 }
