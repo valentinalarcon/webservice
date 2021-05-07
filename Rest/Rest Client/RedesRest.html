@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- <script src="app.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>Trabajo Redes</title>
+  </head>
+  <body>
+
+
+    <body>
+
+      <div class="container my-5 ">
+        <div class="row">
+            <div class="col-3">
+                <form id="formulario">
+                    <div class="form-group my-2">
+                      <label>RUT</label>
+                      <input type="number"  id="sendRut" minlength="7" maxlength="9" class="form-control my-2" name="rut" placeholder="Ingrese RUT">
+                      <p class="card-text" >El dígito verificador es: <strong id="cardDV"></strong> </p>
+                    </div>
+                    <hr>
+
+                    <div class="form-group my-2">
+                      <label>Nombre</label>
+                      <input type="text"  id="Name" class="form-control my-2" placeholder="Ingrese Nombre Completo">
+                      <p class="card-text" >Nombres <strong id="NameOk"></strong> </p>
+                      <p class="card-text" >Apellidos <strong id="LastNameOk"></strong> </p>
+                    </div>
+                    
+
+                    <button type="button" class="btn btn-success my-3" id="btnDv" >Enviar Datos</button>
+                    <button type="button" class="btn btn-success my-3" id="btnNm" >Enviar Datos</button>
+                  
+                  </form>
+            </div>
+        </div>
+    </div>
+    </body>
+  
+  <script>
+    $(document).ready(function() {
+        $("#btnDv").click(function(){
+            var rut = $("#sendRut").val();
+            var request = {
+                rut: rut
+            }
+            $.ajax({
+                type: "POST",    
+                url:'http://localhost/Projects/Rest/Rest/public/api/rut',
+                data:JSON.stringify(request),
+                dataType: 'json',
+                contentType: 'application/json',
+                success: function (data){
+                    if(data == 500){
+                        $("#cardDV").html("invalido");
+                    }
+                     else if(data == 100){
+                        $("#cardDV").html("k");}   
+                    else{
+                        $("#cardDV").html(data);}
+                }
+
+            });
+        });
+        
+        $("#btnNm").click(function(){
+          var nombreC = $("#Name").val();
+          var request = {
+            nombreC: nombreC
+            }
+            
+          console.log(nombreC);  
+          $.ajax({
+            type: "POST",    
+            url:'http://localhost/Projects/Rest/Rest/public/api/nombre',
+            data:JSON.stringify(request),
+            dataType: 'json',
+            contentType: 'application/json',
+            success: function (data){
+              if(data[0] == 500){
+                    $("#NameOk").html("invalido");
+                }else {
+                var nom = data[0];
+                var nombres = " ";
+                var app = data[1];
+                var apellidos = " ";
+                nom.forEach(element => {
+                    nombres = nombres + element + "<br>";
+                });
+                $("#NameOk").html(nombres);
+                app.forEach(element => {
+                    apellidos = apellidos + element + "<br>";
+                });
+                $("#LastNameOk").html(apellidos);
+
+
+              
+        }
+      }
+          });
+        });
+    });
+  
+  </script>
+
+  </html>
