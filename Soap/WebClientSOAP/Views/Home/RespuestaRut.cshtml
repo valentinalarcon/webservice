@@ -2,14 +2,17 @@
 @{
     ViewBag.title = "Rut";
 }
-
-<h2>Aqui va el rut con su dv</h2>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<h1 class="text-center text-secondary font-weight-bold my-4">@Model.Rut</h1>
+<div class="container mt-5 rounded shadow-lg" style="background-color: white;">
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col">
+                <h2 class="mt-3">Su rut con el dígito verificador correspondiente es:</h2>
+                <br>
+                <br>           
+                <h1 class="text-center text-secondary font-weight-bold my-4">@Model.Rut</h1>
+                <br>
+                <br>        
+            </div>
+        </div>
+    </div>
+</div>

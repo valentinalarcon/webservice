@@ -9,7 +9,7 @@
             <h3 class="text-uppercase font-weight-bold my-4">Rut</h3>
             <hr>
             <p class="text-justify my-2 py-3">
-                En esta sección podrás comprobar si el digito verificador que haz ingresado es <a class="badge badge-success">valido</a> o <a class="badge badge-danger">invalido</a><br><br>Solo debes ingresar el rut que quieras y el algoritmo hará todo.
+               Aqui debes ingresar tu rut sin el dígito verificador y se te retornara tu rut con el digito verificador correcto.
             </p>
         </div>
         <div class="col-11 col-ms-11 col-lg-7 bg-white rounded border shadow-sm mx-1">
@@ -18,10 +18,10 @@
                     <form action="/Home/RespuestaRut" method="POST">
                         <div class="form-group">
                             <label for="Rut">Ingrese un rut :</label>
-                            <input type="text" class="form-control form-control-sm" placeholder="12.345.678-9" name="Rut">
+                            <input type="number" class="form-control form-control-sm" placeholder="12.345.678-9" name="Rut">
                         </div>
                         <div class="d-flex justify-content-center">
-                            <button type="submit" class="btn btn-success">Enviar</button>
+                            <button type="submit" class="btn text-white my-3" style="background-color: #4361ee;">Enviar</button>
                         </div>
                     </form>
                 </div>

@@ -3,13 +3,18 @@
     ViewBag.title = "Nombres";
 }
 
-<h2>Aqui va el nombre separado:</h2>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<h1 class="text-center text-secondary font-weight-bold my-4">@Model.Nombre</h1>
+<div class="container mt-5 rounded shadow-lg" style="background-color: white;">
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col">
+                <h2 class="mt-3">Su nombre ordenado jerarquicamente es:</h2>
+                <br>
+                <br>
+
+                <h1 class="text-center text-secondary  my-4">@Model.Nombre</h1>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
