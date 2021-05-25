@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\Soap",
-    "\\Soap\\WebApplicationSOAP\\WebApplicationSOAP",
-    "\\Soap\\WebApplicationSOAP\\WebApplicationSOAP\\obj",
-    "\\Soap\\WebApplicationSOAP\\WebApplicationSOAP\\obj\\Release",
-    "\\Soap\\WebApplicationSOAP\\WebApplicationSOAP\\obj\\Release\\net5.0",
-    "\\Soap\\WebApplicationSOAP\\WebApplicationSOAP\\obj\\Release\\net5.0\\ref",
+    "\\Soap\\servidor-SOAP\\src\\serv",
     "\\Soap\\WebClientSOAP",
     "\\Soap\\WebClientSOAP\\Models",
-    "\\Soap\\WebClientSOAP\\Servicios"
+    "\\Soap\\WebClientSOAP\\Properties",
+    "\\Soap\\WebClientSOAP\\Servicios",
+    "\\Soap\\WebClientSOAP\\Views",
+    "\\Soap\\WebClientSOAP\\Views\\Home",
+    "\\Soap\\WebClientSOAP\\Views\\Shared"
   ],
-  "SelectedNode": "\\Soap\\WebClientSOAP",
+  "SelectedNode": "\\Soap\\WebClientSOAP\\WebClientSOAP.sln",
   "PreviewInSolutionExplorer": false
 }
