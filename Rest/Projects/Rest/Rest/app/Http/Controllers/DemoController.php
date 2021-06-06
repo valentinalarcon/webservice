@@ -16,8 +16,9 @@ class DemoController extends Controller
                 $rut = intval($rut);
                 $dv = 0;
                 if(strlen($aux)<7 || strlen($aux)>8){
-                    return 500;
+                    
                     Log::info("Rut inválido");
+                    return 500;
                 }else{
                     $s=1;
                     for($m=0;$rut!=0;$rut/=10){
@@ -47,8 +48,9 @@ class DemoController extends Controller
                 $arregloinv = array();
                 $arregloinv[0] = 500;
                 if($ct < 3){
-                    return $arregloinv;
+                    
                     Log::info("Nombre inválido");
+                    return $arregloinv;
                 }
                 else{
                     if(preg_match("/^[a-zA-Z\s]*$/", $nombre)){
