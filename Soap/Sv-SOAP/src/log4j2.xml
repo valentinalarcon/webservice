@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="OFF">
+    <Properties>
+        <Property name="LOG_PATTERN">%d{ISO8601} %-5p[%t|%c{1}] [Linea] %L %M %m\n</Property>
+    </Properties>
+ 
+    <Appenders>
+
+        <Console name="Console" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+        
+        <RollingFile name="AllLevels" fileName="C://logs//TrabajoRedes.log" filePattern="C://logs//TrabajoRedes-%d-%i.log.zip">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+
+            <Policies>
+            	<SizeBasedTriggeringPolicy size="1KB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="100"/>
+        </RollingFile>
+    </Appenders>
+    
+    <Loggers>
+        <Logger name="redes.funciones" additivity="true">
+            <AppenderRef ref="AllLevels"/>
+            <AppenderRef ref="Console" />
+        </Logger>
+        
+        <Root level="all">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>

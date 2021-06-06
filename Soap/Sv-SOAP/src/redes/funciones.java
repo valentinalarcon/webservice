@@ -1,15 +1,28 @@
-package serv;
-	
+package redes;
+
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.core.config.Configurator;
+
 public class funciones {
-	public static String dv_rut (String Rut) {
+	
+	static Logger log = LogManager.getLogger(funciones.class.getName());
+
+	public static String VerificadorRut (String Rut) {
 		String resp = "Rut invalido";
 		if(Rut.length() == 0) {
+			log.warn("Rut no Ingresado");
+			log.error("Rut invalido");
 			return "Ingrese su Rut";
 		}
 		else if (Rut.length() > 8 || Rut.length() <= 6){
+			log.warn("Largo del Rut incorrecto | Largo: " + Rut.length());
+			log.error("Rut invalido");
 			return resp;
 		}
 		else{
+			log.info("Ingresando Rut | Rut: " + Rut);
 			int rutlen = Rut.length();  
 			int cont = 0;
 			for(int i = 0; i < rutlen; i++) {
@@ -21,15 +34,20 @@ public class funciones {
 					}
 				}
 			}
+			log.info("Contador de caracteres | Cont: " + cont);
 			if(cont < Rut.length()) {
+				log.warn("El rut posee caracteres invalidos | Rut: " + Rut);
+				log.info("Caracteres invalidos: " + (Rut.length() - cont));
+				log.error("Rut invalido");
 				return resp;
 			}
 			else{
-				return digito_verificador(Rut);
+				log.info("El Rut no posee caracteres invalidos | Rut: " + Rut);
+				return DigitoVerificador(Rut);
 			}
 		}
 	}
-	public static String digito_verificador(String Rut){
+	public static String DigitoVerificador(String Rut){
 		int len = Rut.length();
 		char[] invertido = new char[len];
 		for(int i=0; i<Rut.length() ; i++){
@@ -53,13 +71,17 @@ public class funciones {
 		if (digito == 11) {
 			dv = "0";
 		}
+		log.info("Digito verificador correspondiente al Rut ingresado | Dv: " + dv);
 		return Rut + "-" + dv;
 	}
-	public  static boolean validar_nombre(String Nombre) {
+	public  static boolean ValidarNombre(String Nombre) {
 		if(Nombre.length() == 0) {
+			log.warn("Nombre no Ingresado");
+			log.error("Nombre invalido");
 			return false;
 		}
 		else{
+			log.warn("Analizando caracteres en el Nombre | Nombre: " + Nombre);
 			int cont = 0;
 			for(int i=0; i<Nombre.length(); i++) {
 				char character = Nombre.charAt(i);
@@ -78,20 +100,26 @@ public class funciones {
 					}
 				}
 			}
+			log.info("Contador de caracteres | Cont: " + cont);
 			if(cont == Nombre.length()) {
+				log.info("El nombre no posee caracteres invalidos | Nombre: " + Nombre);
+
 				return true;
 			}
 			else {
+				log.warn("El nombre posee caracteres invalidos | Nombre " + Nombre);
+				log.info("Caracteres invalidos: " + (Nombre.length() - cont));
+
 				return false;
 			}
 				
 		}
 	}
-	public static String separar_nombre(String Nombre) {
+	public static String SepararNombre(String Nombre) {
 		String[] nombre_separado = Nombre.split(" ");
 		String nombres = "Nombres:" + "\n";
 		String apellidos = "Apellidos:" + "\n";
-		if(validar_nombre(Nombre)==true) {
+		if(ValidarNombre(Nombre)==true) {
 				for(int i=0; i<nombre_separado.length-2; i++){
 					nombres+=nombre_separado[i] + "\n";
 				}
@@ -102,9 +130,9 @@ public class funciones {
 			
 		}
 		else {
+			log.error("Nombre invalido");
 			return "Nombre invalido";
 		}
 	}
+
 }
-
-
