@@ -30,6 +30,8 @@ class DemoController extends Controller
                         return 100;
                     }
                     else{
+                        
+                    Log::info("Retorna Digito verificador y finaliza la función");
                         return $dv;
                     }
                 }
@@ -62,6 +64,8 @@ class DemoController extends Controller
                         }
                         array_push($arreglojson,$arreglo_auxnombres);
                         array_push($arreglojson,$arreglo_aux);
+                        
+                        Log::info("Retorna Nombre ordenado jerárquicamente y finaliza la función");
                         return $arreglojson;
                     }
                     else{
