@@ -19,7 +19,7 @@ namespace WebClientSOAP.Servicios
             }
             return new RutModel()
             {
-                Rut = run.DigitoVerificador(Rut)
+                Rut = run.digitoVerificador(Rut)
                 
             };
         }
@@ -34,7 +34,7 @@ namespace WebClientSOAP.Servicios
             }
             return new NombresModel()
             {
-                Nombre = run.SepararNombre(Nombre)
+                Nombre = run.separarNombre(Nombre)
 
             };
 

@@ -16,50 +16,50 @@ namespace WsSOAP
     public interface funciones
     {
         
-        // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Rut del espacio de nombres http://redes no está marcado para convertirse en valor nulo
+        // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Nombre del espacio de nombres http://redes no está marcado para convertirse en valor nulo
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        WsSOAP.VerificadorRutResponse VerificadorRut(WsSOAP.VerificadorRutRequest request);
+        WsSOAP.validarNombreResponse validarNombre(WsSOAP.validarNombreRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WsSOAP.VerificadorRutResponse> VerificadorRutAsync(WsSOAP.VerificadorRutRequest request);
+        System.Threading.Tasks.Task<WsSOAP.validarNombreResponse> validarNombreAsync(WsSOAP.validarNombreRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Nombre del espacio de nombres http://redes no está marcado para convertirse en valor nulo
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        WsSOAP.SepararNombreResponse SepararNombre(WsSOAP.SepararNombreRequest request);
+        WsSOAP.separarNombreResponse separarNombre(WsSOAP.separarNombreRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WsSOAP.SepararNombreResponse> SepararNombreAsync(WsSOAP.SepararNombreRequest request);
+        System.Threading.Tasks.Task<WsSOAP.separarNombreResponse> separarNombreAsync(WsSOAP.separarNombreRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Rut del espacio de nombres http://redes no está marcado para convertirse en valor nulo
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        WsSOAP.DigitoVerificadorResponse DigitoVerificador(WsSOAP.DigitoVerificadorRequest request);
+        WsSOAP.digitoVerificadorResponse digitoVerificador(WsSOAP.digitoVerificadorRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WsSOAP.DigitoVerificadorResponse> DigitoVerificadorAsync(WsSOAP.DigitoVerificadorRequest request);
+        System.Threading.Tasks.Task<WsSOAP.digitoVerificadorResponse> digitoVerificadorAsync(WsSOAP.digitoVerificadorRequest request);
         
-        // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Nombre del espacio de nombres http://redes no está marcado para convertirse en valor nulo
+        // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Rut del espacio de nombres http://redes no está marcado para convertirse en valor nulo
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        WsSOAP.ValidarNombreResponse ValidarNombre(WsSOAP.ValidarNombreRequest request);
+        WsSOAP.verificadorRutResponse verificadorRut(WsSOAP.verificadorRutRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="", ReplyAction="*")]
-        System.Threading.Tasks.Task<WsSOAP.ValidarNombreResponse> ValidarNombreAsync(WsSOAP.ValidarNombreRequest request);
+        System.Threading.Tasks.Task<WsSOAP.verificadorRutResponse> verificadorRutAsync(WsSOAP.verificadorRutRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class VerificadorRutRequest
+    public partial class validarNombreRequest
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="VerificadorRut", Namespace="http://redes", Order=0)]
-        public WsSOAP.VerificadorRutRequestBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="validarNombre", Namespace="http://redes", Order=0)]
+        public WsSOAP.validarNombreRequestBody Body;
         
-        public VerificadorRutRequest()
+        public validarNombreRequest()
         {
         }
         
-        public VerificadorRutRequest(WsSOAP.VerificadorRutRequestBody Body)
+        public validarNombreRequest(WsSOAP.validarNombreRequestBody Body)
         {
             this.Body = Body;
         }
@@ -69,97 +69,17 @@ namespace WsSOAP
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://redes")]
-    public partial class VerificadorRutRequestBody
-    {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string Rut;
-        
-        public VerificadorRutRequestBody()
-        {
-        }
-        
-        public VerificadorRutRequestBody(string Rut)
-        {
-            this.Rut = Rut;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class VerificadorRutResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="VerificadorRutResponse", Namespace="http://redes", Order=0)]
-        public WsSOAP.VerificadorRutResponseBody Body;
-        
-        public VerificadorRutResponse()
-        {
-        }
-        
-        public VerificadorRutResponse(WsSOAP.VerificadorRutResponseBody Body)
-        {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://redes")]
-    public partial class VerificadorRutResponseBody
-    {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string VerificadorRutReturn;
-        
-        public VerificadorRutResponseBody()
-        {
-        }
-        
-        public VerificadorRutResponseBody(string VerificadorRutReturn)
-        {
-            this.VerificadorRutReturn = VerificadorRutReturn;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class SepararNombreRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="SepararNombre", Namespace="http://redes", Order=0)]
-        public WsSOAP.SepararNombreRequestBody Body;
-        
-        public SepararNombreRequest()
-        {
-        }
-        
-        public SepararNombreRequest(WsSOAP.SepararNombreRequestBody Body)
-        {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://redes")]
-    public partial class SepararNombreRequestBody
+    public partial class validarNombreRequestBody
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
         public string Nombre;
         
-        public SepararNombreRequestBody()
+        public validarNombreRequestBody()
         {
         }
         
-        public SepararNombreRequestBody(string Nombre)
+        public validarNombreRequestBody(string Nombre)
         {
             this.Nombre = Nombre;
         }
@@ -169,17 +89,17 @@ namespace WsSOAP
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class SepararNombreResponse
+    public partial class validarNombreResponse
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="SepararNombreResponse", Namespace="http://redes", Order=0)]
-        public WsSOAP.SepararNombreResponseBody Body;
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="validarNombreResponse", Namespace="http://redes", Order=0)]
+        public WsSOAP.validarNombreResponseBody Body;
         
-        public SepararNombreResponse()
+        public validarNombreResponse()
         {
         }
         
-        public SepararNombreResponse(WsSOAP.SepararNombreResponseBody Body)
+        public validarNombreResponse(WsSOAP.validarNombreResponseBody Body)
         {
             this.Body = Body;
         }
@@ -189,179 +109,259 @@ namespace WsSOAP
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://redes")]
-    public partial class SepararNombreResponseBody
-    {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string SepararNombreReturn;
-        
-        public SepararNombreResponseBody()
-        {
-        }
-        
-        public SepararNombreResponseBody(string SepararNombreReturn)
-        {
-            this.SepararNombreReturn = SepararNombreReturn;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class DigitoVerificadorRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="DigitoVerificador", Namespace="http://redes", Order=0)]
-        public WsSOAP.DigitoVerificadorRequestBody Body;
-        
-        public DigitoVerificadorRequest()
-        {
-        }
-        
-        public DigitoVerificadorRequest(WsSOAP.DigitoVerificadorRequestBody Body)
-        {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://redes")]
-    public partial class DigitoVerificadorRequestBody
-    {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string Rut;
-        
-        public DigitoVerificadorRequestBody()
-        {
-        }
-        
-        public DigitoVerificadorRequestBody(string Rut)
-        {
-            this.Rut = Rut;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class DigitoVerificadorResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="DigitoVerificadorResponse", Namespace="http://redes", Order=0)]
-        public WsSOAP.DigitoVerificadorResponseBody Body;
-        
-        public DigitoVerificadorResponse()
-        {
-        }
-        
-        public DigitoVerificadorResponse(WsSOAP.DigitoVerificadorResponseBody Body)
-        {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://redes")]
-    public partial class DigitoVerificadorResponseBody
-    {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string DigitoVerificadorReturn;
-        
-        public DigitoVerificadorResponseBody()
-        {
-        }
-        
-        public DigitoVerificadorResponseBody(string DigitoVerificadorReturn)
-        {
-            this.DigitoVerificadorReturn = DigitoVerificadorReturn;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class ValidarNombreRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="ValidarNombre", Namespace="http://redes", Order=0)]
-        public WsSOAP.ValidarNombreRequestBody Body;
-        
-        public ValidarNombreRequest()
-        {
-        }
-        
-        public ValidarNombreRequest(WsSOAP.ValidarNombreRequestBody Body)
-        {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://redes")]
-    public partial class ValidarNombreRequestBody
-    {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string Nombre;
-        
-        public ValidarNombreRequestBody()
-        {
-        }
-        
-        public ValidarNombreRequestBody(string Nombre)
-        {
-            this.Nombre = Nombre;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class ValidarNombreResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="ValidarNombreResponse", Namespace="http://redes", Order=0)]
-        public WsSOAP.ValidarNombreResponseBody Body;
-        
-        public ValidarNombreResponse()
-        {
-        }
-        
-        public ValidarNombreResponse(WsSOAP.ValidarNombreResponseBody Body)
-        {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://redes")]
-    public partial class ValidarNombreResponseBody
+    public partial class validarNombreResponseBody
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool ValidarNombreReturn;
+        public bool validarNombreReturn;
         
-        public ValidarNombreResponseBody()
+        public validarNombreResponseBody()
         {
         }
         
-        public ValidarNombreResponseBody(bool ValidarNombreReturn)
+        public validarNombreResponseBody(bool validarNombreReturn)
         {
-            this.ValidarNombreReturn = ValidarNombreReturn;
+            this.validarNombreReturn = validarNombreReturn;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class separarNombreRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="separarNombre", Namespace="http://redes", Order=0)]
+        public WsSOAP.separarNombreRequestBody Body;
+        
+        public separarNombreRequest()
+        {
+        }
+        
+        public separarNombreRequest(WsSOAP.separarNombreRequestBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://redes")]
+    public partial class separarNombreRequestBody
+    {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string Nombre;
+        
+        public separarNombreRequestBody()
+        {
+        }
+        
+        public separarNombreRequestBody(string Nombre)
+        {
+            this.Nombre = Nombre;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class separarNombreResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="separarNombreResponse", Namespace="http://redes", Order=0)]
+        public WsSOAP.separarNombreResponseBody Body;
+        
+        public separarNombreResponse()
+        {
+        }
+        
+        public separarNombreResponse(WsSOAP.separarNombreResponseBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://redes")]
+    public partial class separarNombreResponseBody
+    {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string separarNombreReturn;
+        
+        public separarNombreResponseBody()
+        {
+        }
+        
+        public separarNombreResponseBody(string separarNombreReturn)
+        {
+            this.separarNombreReturn = separarNombreReturn;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class digitoVerificadorRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="digitoVerificador", Namespace="http://redes", Order=0)]
+        public WsSOAP.digitoVerificadorRequestBody Body;
+        
+        public digitoVerificadorRequest()
+        {
+        }
+        
+        public digitoVerificadorRequest(WsSOAP.digitoVerificadorRequestBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://redes")]
+    public partial class digitoVerificadorRequestBody
+    {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string Rut;
+        
+        public digitoVerificadorRequestBody()
+        {
+        }
+        
+        public digitoVerificadorRequestBody(string Rut)
+        {
+            this.Rut = Rut;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class digitoVerificadorResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="digitoVerificadorResponse", Namespace="http://redes", Order=0)]
+        public WsSOAP.digitoVerificadorResponseBody Body;
+        
+        public digitoVerificadorResponse()
+        {
+        }
+        
+        public digitoVerificadorResponse(WsSOAP.digitoVerificadorResponseBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://redes")]
+    public partial class digitoVerificadorResponseBody
+    {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string digitoVerificadorReturn;
+        
+        public digitoVerificadorResponseBody()
+        {
+        }
+        
+        public digitoVerificadorResponseBody(string digitoVerificadorReturn)
+        {
+            this.digitoVerificadorReturn = digitoVerificadorReturn;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class verificadorRutRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="verificadorRut", Namespace="http://redes", Order=0)]
+        public WsSOAP.verificadorRutRequestBody Body;
+        
+        public verificadorRutRequest()
+        {
+        }
+        
+        public verificadorRutRequest(WsSOAP.verificadorRutRequestBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://redes")]
+    public partial class verificadorRutRequestBody
+    {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string Rut;
+        
+        public verificadorRutRequestBody()
+        {
+        }
+        
+        public verificadorRutRequestBody(string Rut)
+        {
+            this.Rut = Rut;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class verificadorRutResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="verificadorRutResponse", Namespace="http://redes", Order=0)]
+        public WsSOAP.verificadorRutResponseBody Body;
+        
+        public verificadorRutResponse()
+        {
+        }
+        
+        public verificadorRutResponse(WsSOAP.verificadorRutResponseBody Body)
+        {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://redes")]
+    public partial class verificadorRutResponseBody
+    {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string verificadorRutReturn;
+        
+        public verificadorRutResponseBody()
+        {
+        }
+        
+        public verificadorRutResponseBody(string verificadorRutReturn)
+        {
+            this.verificadorRutReturn = verificadorRutReturn;
         }
     }
     
@@ -416,119 +416,119 @@ namespace WsSOAP
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WsSOAP.VerificadorRutResponse WsSOAP.funciones.VerificadorRut(WsSOAP.VerificadorRutRequest request)
+        WsSOAP.validarNombreResponse WsSOAP.funciones.validarNombre(WsSOAP.validarNombreRequest request)
         {
-            return base.Channel.VerificadorRut(request);
+            return base.Channel.validarNombre(request);
         }
         
-        public string VerificadorRut(string Rut)
+        public bool validarNombre(string Nombre)
         {
-            WsSOAP.VerificadorRutRequest inValue = new WsSOAP.VerificadorRutRequest();
-            inValue.Body = new WsSOAP.VerificadorRutRequestBody();
-            inValue.Body.Rut = Rut;
-            WsSOAP.VerificadorRutResponse retVal = ((WsSOAP.funciones)(this)).VerificadorRut(inValue);
-            return retVal.Body.VerificadorRutReturn;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WsSOAP.VerificadorRutResponse> WsSOAP.funciones.VerificadorRutAsync(WsSOAP.VerificadorRutRequest request)
-        {
-            return base.Channel.VerificadorRutAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<WsSOAP.VerificadorRutResponse> VerificadorRutAsync(string Rut)
-        {
-            WsSOAP.VerificadorRutRequest inValue = new WsSOAP.VerificadorRutRequest();
-            inValue.Body = new WsSOAP.VerificadorRutRequestBody();
-            inValue.Body.Rut = Rut;
-            return ((WsSOAP.funciones)(this)).VerificadorRutAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WsSOAP.SepararNombreResponse WsSOAP.funciones.SepararNombre(WsSOAP.SepararNombreRequest request)
-        {
-            return base.Channel.SepararNombre(request);
-        }
-        
-        public string SepararNombre(string Nombre)
-        {
-            WsSOAP.SepararNombreRequest inValue = new WsSOAP.SepararNombreRequest();
-            inValue.Body = new WsSOAP.SepararNombreRequestBody();
+            WsSOAP.validarNombreRequest inValue = new WsSOAP.validarNombreRequest();
+            inValue.Body = new WsSOAP.validarNombreRequestBody();
             inValue.Body.Nombre = Nombre;
-            WsSOAP.SepararNombreResponse retVal = ((WsSOAP.funciones)(this)).SepararNombre(inValue);
-            return retVal.Body.SepararNombreReturn;
+            WsSOAP.validarNombreResponse retVal = ((WsSOAP.funciones)(this)).validarNombre(inValue);
+            return retVal.Body.validarNombreReturn;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WsSOAP.SepararNombreResponse> WsSOAP.funciones.SepararNombreAsync(WsSOAP.SepararNombreRequest request)
+        System.Threading.Tasks.Task<WsSOAP.validarNombreResponse> WsSOAP.funciones.validarNombreAsync(WsSOAP.validarNombreRequest request)
         {
-            return base.Channel.SepararNombreAsync(request);
+            return base.Channel.validarNombreAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WsSOAP.SepararNombreResponse> SepararNombreAsync(string Nombre)
+        public System.Threading.Tasks.Task<WsSOAP.validarNombreResponse> validarNombreAsync(string Nombre)
         {
-            WsSOAP.SepararNombreRequest inValue = new WsSOAP.SepararNombreRequest();
-            inValue.Body = new WsSOAP.SepararNombreRequestBody();
+            WsSOAP.validarNombreRequest inValue = new WsSOAP.validarNombreRequest();
+            inValue.Body = new WsSOAP.validarNombreRequestBody();
             inValue.Body.Nombre = Nombre;
-            return ((WsSOAP.funciones)(this)).SepararNombreAsync(inValue);
+            return ((WsSOAP.funciones)(this)).validarNombreAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WsSOAP.DigitoVerificadorResponse WsSOAP.funciones.DigitoVerificador(WsSOAP.DigitoVerificadorRequest request)
+        WsSOAP.separarNombreResponse WsSOAP.funciones.separarNombre(WsSOAP.separarNombreRequest request)
         {
-            return base.Channel.DigitoVerificador(request);
+            return base.Channel.separarNombre(request);
         }
         
-        public string DigitoVerificador(string Rut)
+        public string separarNombre(string Nombre)
         {
-            WsSOAP.DigitoVerificadorRequest inValue = new WsSOAP.DigitoVerificadorRequest();
-            inValue.Body = new WsSOAP.DigitoVerificadorRequestBody();
+            WsSOAP.separarNombreRequest inValue = new WsSOAP.separarNombreRequest();
+            inValue.Body = new WsSOAP.separarNombreRequestBody();
+            inValue.Body.Nombre = Nombre;
+            WsSOAP.separarNombreResponse retVal = ((WsSOAP.funciones)(this)).separarNombre(inValue);
+            return retVal.Body.separarNombreReturn;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<WsSOAP.separarNombreResponse> WsSOAP.funciones.separarNombreAsync(WsSOAP.separarNombreRequest request)
+        {
+            return base.Channel.separarNombreAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<WsSOAP.separarNombreResponse> separarNombreAsync(string Nombre)
+        {
+            WsSOAP.separarNombreRequest inValue = new WsSOAP.separarNombreRequest();
+            inValue.Body = new WsSOAP.separarNombreRequestBody();
+            inValue.Body.Nombre = Nombre;
+            return ((WsSOAP.funciones)(this)).separarNombreAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WsSOAP.digitoVerificadorResponse WsSOAP.funciones.digitoVerificador(WsSOAP.digitoVerificadorRequest request)
+        {
+            return base.Channel.digitoVerificador(request);
+        }
+        
+        public string digitoVerificador(string Rut)
+        {
+            WsSOAP.digitoVerificadorRequest inValue = new WsSOAP.digitoVerificadorRequest();
+            inValue.Body = new WsSOAP.digitoVerificadorRequestBody();
             inValue.Body.Rut = Rut;
-            WsSOAP.DigitoVerificadorResponse retVal = ((WsSOAP.funciones)(this)).DigitoVerificador(inValue);
-            return retVal.Body.DigitoVerificadorReturn;
+            WsSOAP.digitoVerificadorResponse retVal = ((WsSOAP.funciones)(this)).digitoVerificador(inValue);
+            return retVal.Body.digitoVerificadorReturn;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WsSOAP.DigitoVerificadorResponse> WsSOAP.funciones.DigitoVerificadorAsync(WsSOAP.DigitoVerificadorRequest request)
+        System.Threading.Tasks.Task<WsSOAP.digitoVerificadorResponse> WsSOAP.funciones.digitoVerificadorAsync(WsSOAP.digitoVerificadorRequest request)
         {
-            return base.Channel.DigitoVerificadorAsync(request);
+            return base.Channel.digitoVerificadorAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WsSOAP.DigitoVerificadorResponse> DigitoVerificadorAsync(string Rut)
+        public System.Threading.Tasks.Task<WsSOAP.digitoVerificadorResponse> digitoVerificadorAsync(string Rut)
         {
-            WsSOAP.DigitoVerificadorRequest inValue = new WsSOAP.DigitoVerificadorRequest();
-            inValue.Body = new WsSOAP.DigitoVerificadorRequestBody();
+            WsSOAP.digitoVerificadorRequest inValue = new WsSOAP.digitoVerificadorRequest();
+            inValue.Body = new WsSOAP.digitoVerificadorRequestBody();
             inValue.Body.Rut = Rut;
-            return ((WsSOAP.funciones)(this)).DigitoVerificadorAsync(inValue);
+            return ((WsSOAP.funciones)(this)).digitoVerificadorAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        WsSOAP.ValidarNombreResponse WsSOAP.funciones.ValidarNombre(WsSOAP.ValidarNombreRequest request)
+        WsSOAP.verificadorRutResponse WsSOAP.funciones.verificadorRut(WsSOAP.verificadorRutRequest request)
         {
-            return base.Channel.ValidarNombre(request);
+            return base.Channel.verificadorRut(request);
         }
         
-        public bool ValidarNombre(string Nombre)
+        public string verificadorRut(string Rut)
         {
-            WsSOAP.ValidarNombreRequest inValue = new WsSOAP.ValidarNombreRequest();
-            inValue.Body = new WsSOAP.ValidarNombreRequestBody();
-            inValue.Body.Nombre = Nombre;
-            WsSOAP.ValidarNombreResponse retVal = ((WsSOAP.funciones)(this)).ValidarNombre(inValue);
-            return retVal.Body.ValidarNombreReturn;
+            WsSOAP.verificadorRutRequest inValue = new WsSOAP.verificadorRutRequest();
+            inValue.Body = new WsSOAP.verificadorRutRequestBody();
+            inValue.Body.Rut = Rut;
+            WsSOAP.verificadorRutResponse retVal = ((WsSOAP.funciones)(this)).verificadorRut(inValue);
+            return retVal.Body.verificadorRutReturn;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<WsSOAP.ValidarNombreResponse> WsSOAP.funciones.ValidarNombreAsync(WsSOAP.ValidarNombreRequest request)
+        System.Threading.Tasks.Task<WsSOAP.verificadorRutResponse> WsSOAP.funciones.verificadorRutAsync(WsSOAP.verificadorRutRequest request)
         {
-            return base.Channel.ValidarNombreAsync(request);
+            return base.Channel.verificadorRutAsync(request);
         }
         
-        public System.Threading.Tasks.Task<WsSOAP.ValidarNombreResponse> ValidarNombreAsync(string Nombre)
+        public System.Threading.Tasks.Task<WsSOAP.verificadorRutResponse> verificadorRutAsync(string Rut)
         {
-            WsSOAP.ValidarNombreRequest inValue = new WsSOAP.ValidarNombreRequest();
-            inValue.Body = new WsSOAP.ValidarNombreRequestBody();
-            inValue.Body.Nombre = Nombre;
-            return ((WsSOAP.funciones)(this)).ValidarNombreAsync(inValue);
+            WsSOAP.verificadorRutRequest inValue = new WsSOAP.verificadorRutRequest();
+            inValue.Body = new WsSOAP.verificadorRutRequestBody();
+            inValue.Body.Rut = Rut;
+            return ((WsSOAP.funciones)(this)).verificadorRutAsync(inValue);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

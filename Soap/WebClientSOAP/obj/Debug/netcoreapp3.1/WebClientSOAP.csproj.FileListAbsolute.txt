@@ -49,7 +49,6 @@ C:\Users\crist\source\repos\WebClientSOAP\obj\Debug\netcoreapp3.1\WebClientSOAP.
 C:\Users\crist\source\repos\WebClientSOAP\obj\Debug\netcoreapp3.1\Razor\Views\Home\Rut.cshtml.g.cs
 C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\bin\Debug\netcoreapp3.1\Connected Services\WsSOAP\ConnectedService.json
 C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\bin\Debug\netcoreapp3.1\WebClientSOAP.exe
 C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\bin\Debug\netcoreapp3.1\WebClientSOAP.deps.json
 C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\bin\Debug\netcoreapp3.1\WebClientSOAP.runtimeconfig.json
@@ -98,3 +97,4 @@ C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\obj\Debug\netcorea
 C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\obj\Debug\netcoreapp3.1\WebClientSOAP.genruntimeconfig.cache
 C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\obj\Debug\netcoreapp3.1\Razor\Views\Home\Nombres.cshtml.g.cs
 C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\obj\Debug\netcoreapp3.1\Razor\Views\Home\RespuestaNombres.cshtml.g.cs
+C:\Users\crist\Documents\GitHub\webservice\Soap\WebClientSOAP\bin\Debug\netcoreapp3.1\Connected Services\ServiceReference1\ConnectedService.json

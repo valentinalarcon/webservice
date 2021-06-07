@@ -1,7 +1,7 @@
 package redes;
 
 public class funciones {
-	public static String VerificadorRut (String Rut) {
+	public static String verificadorRut (String Rut) {
 		String resp = "Rut invalido";
 		if(Rut.length() == 0) {
 			return "Ingrese su Rut";
@@ -25,11 +25,11 @@ public class funciones {
 				return resp;
 			}
 			else{
-				return DigitoVerificador(Rut);
+				return digitoVerificador(Rut);
 			}
 		}
 	}
-	public static String DigitoVerificador(String Rut){
+	public static String digitoVerificador(String Rut){
 		int len = Rut.length();
 		char[] invertido = new char[len];
 		for(int i=0; i<Rut.length() ; i++){
@@ -55,7 +55,7 @@ public class funciones {
 		}
 		return Rut + "-" + dv;
 	}
-	public  static boolean ValidarNombre(String Nombre) {
+	public  static boolean validarNombre(String Nombre) {
 		if(Nombre.length() == 0) {
 			return false;
 		}
@@ -88,11 +88,11 @@ public class funciones {
 				
 		}
 	}
-	public static String SepararNombre(String Nombre) {
+	public static String separarNombre(String Nombre) {
 		String[] nombre_separado = Nombre.split(" ");
 		String nombres = "Nombres:" + "\n";
 		String apellidos = "Apellidos:" + "\n";
-		if(ValidarNombre(Nombre)==true) {
+		if(validarNombre(Nombre)==true) {
 				for(int i=0; i<nombre_separado.length-2; i++){
 					nombres+=nombre_separado[i] + "\n";
 				}
