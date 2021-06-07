@@ -3,17 +3,21 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Log;
 class DemoController extends Controller
 {
 
             public function rut(Request $request){
+                
+            Log::info("Comienza Función RUT");
                 $gets = $request->json()->all();
                 $rut = $gets["rut"];
                 $aux = $rut;
                 $rut = intval($rut);
-                $dv;
-                if(strlen($aux)<7 or strlen($aux)>8){
+                $dv = 0;
+                if(strlen($aux)<7 || strlen($aux)>8){
+                    
+                    Log::info("Rut inválido");
                     return 500;
                 }else{
                     $s=1;
@@ -31,9 +35,9 @@ class DemoController extends Controller
                 }
 
             }
-
             public function nombre(Request $request){
                 
+            Log::info("Comienza Función Nombre");
                 $toma_n = $request->json()->all();
                 $nombre = $toma_n["nombreC"];
                 $auxn = $nombre;
@@ -44,6 +48,8 @@ class DemoController extends Controller
                 $arregloinv = array();
                 $arregloinv[0] = 500;
                 if($ct < 3){
+                    
+                    Log::info("Nombre inválido");
                     return $arregloinv;
                 }
                 else{
@@ -62,6 +68,7 @@ class DemoController extends Controller
                         return $arregloinv;
                     }
                 }
+                
             }
 
        
